@@ -23,7 +23,7 @@ def replace_by_dict(string, dictionary):
   now = 0
   result = ""
   for char in string:
-    if char not in dictionary.keys():
+    if char not in dictionary:
       now = now + 1
       continue
     result = result + string[begin:now] + dictionary[char]
